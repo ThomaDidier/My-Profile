@@ -1,0 +1,199 @@
+body {
+	background-color: rgb(36, 56, 83);
+	font-family: math;
+	font-size: 17px;
+	font-weight: 650
+}
+h1 {
+	color: rgb(0, 31, 128);
+}
+
+
+h2{
+	color: rgb(0, 31, 128);
+	font-size: 30px;
+	text-justify: center;
+ }
+
+ p{
+ 	text-justify:  center;
+ 	color: rgb(113, 113, 113)
+ }
+
+
+/* Parties Photos */
+
+
+ .img-circle{
+ 	border-radius: 20%;
+ 	height: 220;
+ 	box-shadow: 0px 10px 10px rgba(0,0,0,0.2);
+}
+.photos{
+	border-radius: 4%;
+	height: 200;
+}
+
+
+/* Partie pour <Div> */
+
+
+.cellule {
+	width: 700px;
+	margin: 40px auto;
+	border-radius: 20%;
+}
+.card-white {
+	background-color: white;
+	padding: 40px;
+	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
+	margin: 20px 0px;
+	text-align: center;
+}
+
+
+/* Partie Boutton */
+
+
+.boutton {
+	background-color: rgb(36, 56, 83);
+	color:white;
+	padding: 15px 20px;
+}
+.boutton:hover {
+	background-color: darkgrey;
+	color: black;
+}
+
+
+/* Partie Logos */
+
+
+.logo {
+	list-style: none;
+	padding-left: 0px;
+}
+
+.logo li {
+	display: inline;
+	padding:40px;
+}
+
+.logo i {
+	font-size: 60px;
+	color: rgb(36, 56, 83);
+}
+
+.logo i:hover {
+	color: darkgrey;
+}
+
+
+/* Partie Responsive */
+
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .cellule {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .cellule {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .cellule {
+    width: 300px;
+  }
+}
+
+
+
+p {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css?family=Corben:700");
+h3 {
+  font-family: "Corben", cursive;
+  font-size: 6rem;
+  color: white;
+  letter-spacing: 0.1rem;
+  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.66);
+}
+
+.hero {
+  background-image: radial-gradient(50% 176%, #253854 80%, #061922 100%);
+  min-height: 30rem;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.hero__content {
+  position: relative;
+  align-self: center;
+  padding: 3rem 0;
+}
+
+.snow {
+  position: absolute;
+  min-width: 100vw;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.snow .svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#snow-top-layer {
+  will-change: transform;
+  transform: translateY(-768px);
+  -webkit-animation: fall 22.5s infinite linear;
+          animation: fall 22.5s infinite linear;
+}
+
+#snow-bottom-layer {
+  will-change: transform;
+  transform: translateY(-768px);
+  -webkit-animation: fall 45s infinite linear;
+          animation: fall 45s infinite linear;
+}
+
+@-webkit-keyframes fall {
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fall {
+  100% {
+    transform: translateY(0);
+  }
+}
+
